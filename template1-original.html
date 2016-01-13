@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>replace with my subject</title>
+
+        <style>
+            p {margin: 1em 0px;}/*** @groupdefinition colorscheme*/group.colorscheme {   /*@editable Page Background Color*/page-background-color: #EEEEEE;  /*@editable Header Background */header-background-color: #ffffff;   /*@editable Main Text Color*/text-color: #3C3C3C;   /*@editable Link Color*/link-color: #424242;    /*@editable Footer Link Color*/footer-link-color: #0400F4;  /*@editable Body Background Color*/body-background-color: #FFFFFF;  /*@editable Footer Background Color*/footer-background-color: #d2d2d2;  /*@editable Vertical Line Color*/line-color: #d2d2d2;   /*@editable Top Bar Background Color*/topBar-background-color: #EEEEEE; /*@editable Top Link Color*/top-link-color:#424242; /*@editable Footer Text Color*/footer-text-color:#3C3C3C;   /*@editable Top Text Color*/top-text-color:#3C3C3C; /*@editable Headlines Color*/headline-text-color:#3C3C3C;}/*** @themedefinition default* @title Default*/theme.default {    text-color: #3C3C3C;    link-color: #424242;    footer-link-color: #0400F4; page-background-color: #EEEEEE; header-background-color: #ffffff;   body-background-color: #FFFFFF; footer-background-color: #d2d2d2;   line-color:#DDDDDD; topBar-background-color: #EEEEEE;   top-link-color:990000;  footer-text-color:#000000;  top-text-color:#000000; headline-text-color:#666666;}/*** @themedefinition redwine* @title Red Wine*/theme.redwine {    page-background-color: #2a2a2a; topBar-background-color: #2a2a2a;   header-background-color: #990000;   line-color:#cccccc; body-background-color: #ffffff; footer-background-color: #5d0a09;   link-color: #990000;    footer-link-color: #CCCCCC; text-color: #666666;    top-link-color:#990000; footer-text-color:#ffffff;  top-text-color:#ffffff; headline-text-color:#666666;}/*** @themedefinition blue* @title Deep Blue*/theme.blue { page-background-color: #325ea0; topBar-background-color: #325ea0;   header-background-color: #264779;   line-color:#adbace; body-background-color: #ffffff; footer-background-color: #e2e2e2;   link-color: #264779;    footer-link-color: #7a7a7a; text-color: #666666;    top-link-color:#efefef; footer-text-color:#666666;  top-text-color:#ffffff; headline-text-color:#264779;}/*** @themedefinition deepblue* @title Earth*/theme.earth {    page-background-color: #6a6358; topBar-background-color: #6a6358;   header-background-color: #8cac4d;   line-color:#8cac4d; body-background-color: #ffffff; footer-background-color: #8a8379;   link-color: #f8af3e;    footer-link-color: #f8af3e; text-color: #666666;    top-link-color:#f8af3e; footer-text-color:#ffffff;  top-text-color:#ffffff; headline-text-color:#666666;}/*** @themedefinition lifestyle* @title Lifestyle*/theme.lifestyle {   page-background-color: #c6dbdb; topBar-background-color: #c6dbdb;   header-background-color: #bc3450;   line-color:#c6dbdb; body-background-color: #ffffff; footer-background-color: #3f7e9d;   link-color: #cd3958;    footer-link-color: #c6dbdb; text-color: #8e9d9d;    top-link-color:#cd3958; footer-text-color:#ffffff;  top-text-color:#666666; headline-text-color:#3f7e9d;}/*** @themedefinition asphalt* @title Asphalt*/theme.asphalt { page-background-color: #798287; topBar-background-color: #798287;   header-background-color: #5c6367;   line-color:#cccccc; body-background-color: #393d40; footer-background-color: #5c6367;   link-color: #50a9ca;    footer-link-color: #50a9ca; text-color: #cccccc;    top-link-color:#50a9ca; footer-text-color:#cccccc;  top-text-color:#cccccc; headline-text-color:#50a9ca;}/*** @themedefinition City* @title City*/theme.city {  page-background-color: #dadada; topBar-background-color: #dadada;   header-background-color: #1f4b7a;   line-color:#cccccc; body-background-color: #ffffff; footer-background-color: #cc7634;   link-color: #1f4b7a;    footer-link-color: #9b3133; text-color: #666666;    top-link-color:#9b3133; footer-text-color:#ffffff;  top-text-color:#666666; headline-text-color:#880a0d;}/** @section Background_Colors_Layout* @title Colors and Layout*/table.mainTable { /*@editable Page Background Color*//*@theme page-background-color*/background-color: #eeeeee;}/** @section Background_Colors_Layout* @title Colors and Layout*/table.pageTable {    width: 606px;   padding: 0; margin: 0 auto;}/** @section Background_Colors_Layout* @title Colors and Layout*/#view_browser {    /*@editable Top Bar Background Color*//*@theme topbar-background-color*/background-color: #eeeeee;}/** @section Background_Colors_Layout* @title Colors and Layout*/#header {   height: auto;   padding: 0; margin: 0 auto; font-size:0px;  /*@editable Header Image Background*//*@theme header-background-color*/background-color: #ffffff;}#header img { font-size: 14px; /*This font size covers the alt text*/}/** @section Background_Colors_Layout* @title Colors and Layout*/#header_img {  /*@editable Header Image Alignment*/text-align:center;}#content {   padding: 15px;}/** @section Background_Colors_Layout* @title Colors and Layout*/.sidebarR { border-left:1px solid;  /*@editable Vertical Line Color*//*@theme line-color*/border-left-color:#DDDDDD;}.sidebarOne td, .sidebarTwo td,.sidebarL td, .sidebarR td {padding: 0 10px;}   .sidebarThree td {padding-left: 10px;}.sidebarOne td.spacer, .sidebarTwo td.spacer, .sidebarThree td.spacer,.sidebarL td.spacer, .sidebarR td.spacer {font-size: 10px;padding: 0;}  /** @section Background_Colors_Layout* @title Colors and Layout*/.col_L {   /*@editable Left Column Width*/width: 48%;  /*@editable Left Background Color*//*@theme body-background-color*/background-color: #ffffff;}/** @section Background_Colors_Layout* @title Colors and Layout*/.col_R { /*@editable Right Column Width*/width: 48%; /*@editable Right Background Color*//*@theme body-background-color*/background-color: #ffffff;}/** @section Background_Colors_Layout* @title Colors and Layout*/.main { /*@editable Content Background Color*//*@theme body-background-color*/background-color: #ffffff;}/** @section Background_Colors_Layout* @title Colors and Layout*/#footer { /*@editable Footer Background Color*//*@theme footer-background-color*/background-color: #dddddd;}/** @section Top_Bar* @title Top Bar*/#view_browser p {   text-align:center;  /*@editable Text Color*//*@theme top-text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Size*/font-size:10px;}/** @section Top_Bar* @title Top Bar*/#view_browser a {  /*@editable Link Color*//*@theme top-link-color*/color:#0000FF;}/** @section Left_Headline* @title Left Column Headline*/.sidebarL .titleSide { margin: 5px 0 0 0;  font-weight: normal;    /*@editable Headline Color*//*@theme headline-text-color*/color: #3C3C3C;   /*@editable Headline Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Headline Font Size*/font-size: 16px;    }/** @section Left_Column* @title Left Column*/.sidebarL .textSide {    /*@editable Text Color*//*@theme text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 12px;}/** @section Left_Column* @title Left Column*/.sidebarL a {    /*@editable Link Color*//*@theme link-color*/color: #0000ff;}/** @section Right_Headline* @title Right Column Headline*/.sidebarR .titleSide {  margin: 5px 0 0 0;  font-weight: normal;    /*@editable Headline Color*//*@theme headline-text-color*/color: #3C3C3C;   /*@editable Headline Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Headline Font Size*/font-size: 16px;    }/** @section Right_Column* @title Right Column*/.sidebarR .textSide {  /*@editable Text Color*//*@theme text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 12px;}/** @section Right_Column* @title Right Column*/.sidebarR a {  /*@editable Link Color*//*@theme link-color*/color: #0000ff;}/** @section Background_Colors_Layout* @title Colors and Layout*/.sidebarThree, .sidebarTwo {  border-left:1px solid;  /*@editable 3 Col Vertical Line Color*//*@theme line-color*/border-left-color:#DDDDDD;}/** @section One_Of_Three_Headline* @title Column 1 of 3 Headline*/.sidebarOne .titleSide {  margin: 5px 0 0 0;  font-weight: normal;    /*@editable Headline Color*//*@theme headline-text-color*/color: #3C3C3C;   /*@editable Headline Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Headline Font Size*/font-size: 16px;    }/** @section One_Of_Three_Column* @title Column 1 of 3*/.sidebarOne .textSide {    /*@editable Text Color*//*@theme text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 12px;}/** @section One_Of_Three_Column* @title Column 1 of 3*/.sidebarOne a {    /*@editable Link Color*//*@theme link-color*/color: #0000ff;}/** @section Two_Of_Three_Headline* @title Column 2 of 3 Headline*/.sidebarTwo .titleSide {    margin: 5px 0 0 0;  font-weight: normal;    /*@editable Headline Color*//*@theme headline-text-color*/color: #3C3C3C;   /*@editable Headline Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Headline Font Size*/font-size: 16px;    }/** @section Two_Of_Three_Column* @title Column 2 of 3*/.sidebarTwo .textSide {    /*@editable Text Color*//*@theme text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 12px;}/** @section Two_Of_Three_Column* @title Column 2 of 3*/.sidebarTwo a {    /*@editable Link Color*//*@theme link-color*/color: #0000ff;}/** @section Three_Of_Three_Headline* @title Column 3 of 3 Headline*/.sidebarThree .titleSide {    margin: 5px 0 0 0;  font-weight: normal;    /*@editable Headline Color*//*@theme headline-text-color*/color: #3C3C3C;   /*@editable Headline Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Headline Font Size*/font-size: 16px;    }/** @section Three_Of_Three_Column* @title Column 3 of 3*/.sidebarThree .textSide {    /*@editable Text Color*//*@theme text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 12px;}/** @section Three_Of_Three_Column* @title Column 3 of 3*/.sidebarThree a {    /*@editable Link Color*//*@theme link-color*/color: #0000ff;}/** @section Background_Colors_Layout* @title Colors and Layout*/.col_One {    /*@editable Col 1 of 3 Width*/width: 31%;   /*@editable Col 1 of 3 Background*//*@theme body-background-color*/background-color: #ffffff;}/** @section Background_Colors_Layout* @title Colors and Layout*/.col_Two {   /*@editable Col 2 of 3 Width*/width: 31%;   /*@editable Col 2 of 3 Background*//*@theme body-background-color*/background-color: #ffffff;}/** @section Background_Colors_Layout* @title Colors and Layout*/.col_Three { /*@editable Col 3 of 3 Width*/width: 31%;   /*@editable Col 3 of 3 Background*//*@theme body-background-color*/background-color: #ffffff;}/** @section Main_Column_Headline* @title Main Column Headline*/#content .titleContent {  margin: 0;  font-weight:normal; /*@editable Headline Color*//*@theme headline-text-color*/color: #3C3C3C;   /*@editable Headline Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Headline Font Size*/font-size: 22px;    }/** @section Main_Column_Sub-Headline* @title Main Column Sub-Headline*/#content .SubtitleContent {    margin:0;   font-weight:normal; /*@editable Sub-Headline Color*//*@theme headline-text-color*/color: #3C3C3C;   /*@editable Sub-Headline Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Sub-Headline Font Size*/font-size: 18px;    }.titleContent p, .SubtitleContent p, .footer p {   margin: 0;}.textContent p { margin: 0 0 12px 0;}/** @section Main_Column* @title Main Column*/#content .textContent, #content ul, #content ol { /*@editable Text Color*//*@theme text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 12px;}/** @section Main_Column * @title Main Column*/#content a {    /*@editable Link Color*//*@theme link-color*/color: #0000FF;}/** @section Action_Link * @title Action Link*/.actionLinkContainer {/*@editable Alignment*/text-align:right;margin-top: 5px;}/** @section Action_Link * @title Action Link*/.twoColumn .actionLinkContainer a,.threeColumn .actionLinkContainer a,#content .actionLinkContainer a  {  /*@editable Text Color*//*@theme text-color*/color: #3C3C3C;    /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 12px;    /*@editable Link Color*//*@theme link-color*/color: #0000ff;}/** @section Footer */#footer {    height: 40px;   margin: 0 auto; padding: 10px;}/** @section Footer */#footer {  /*@editable Text Color*//*@theme footer-text-color*/color: #3C3C3C; /*@editable Text Font*/font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;  /*@editable Text Font Size*/font-size: 11px;}/** @section Footer */#footer a {  /*@editable Link Color*//*@theme footer-link-color*/color: #0000FF;}body {  margin: 0;  padding: 0; background-repeat: no-repeat;   font-family: Arial, Verdana, Geneva, Helvetica, sans-serif; font-size: 12px;    width: 100% !important; /* Hotmail body centered */ display:block !important;}div.ec_attachments {  width: 500px;   margin: 20px 0; background-color: #fff; font-size: 13px;    text-align: left;   font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;}div.ec_attachments li { border-top: 1px solid #cccccc;  padding: 10px;}div.ec_attachments ul {  padding-right: 40px;}div.ec_attachments_text {  padding: 10px 0 0 10px;}#attachments div.ecaction_edit {    border: 1px solid #cccccc;} #page { margin: 0px auto;   padding: 0;}#view_browser  {    width:600px;    }a img {    border: none;}#main {   width: 600px;}.spacer {font-size: 10px;padding: 0;}.sidespacer {font-size: 5px;padding: 0;}.mainTable img { height:auto !important;}
+        </style>
+        
+        <style data="noinline" id="ignore">
+            body {   width: 100% !important; /*Hotmail Fix*/}
+        </style>
+
+        <style data="mobile" data-title="Mobile" data-width="335" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)" id="ignore">
+            @media only screen and (max-width: 480px), screen and (max-device-width: 480px) {body { -webkit-text-size-adjust: 100%; line-height: 125% }#page .ec_item, #page .ec_img { padding-top: 10px; }#header_img { line-height: normal !important; }table[class*="mainTable"] img, td[id="content"] img, td[id="sidebarL"] img, td[id="sidebarR"] img { max-width:100% !important; height:auto !important;}table[class*="mainTable"] p{ margin:0.5em 0 !important; }table[class="pageTable"],table[id="main"],div[class="ec_attachments"] { width:320px !important; }td[id="content"] { padding-bottom:0 !important;}td[class*="textContent"],td[class*="textSide"]{ font-size:14px !important; }/*** @section Mobile*/td.titleContent { /*@editable Headline Font Size*/font-size:20px !important; line-height:1 !important; height:auto !important;}/*** @section Mobile*/td[class*="SubtitleContent"] { /*@editable Subtitle Font Size*/font-size:18px !important; line-height:1 !important; height:auto !important; /*@editable Subtitle Font Weight*/font-weight:bold !important;}/*** @section Mobile*/td[class*="textContent"] { /*@editable Body Font Size*/font-size:14px !important; line-height:1 !important; height:auto !important;}/*** @section Mobile*/td[class*="textContent"] a { /*@editable Link Font Size*/font-size:14px !important; }/*** @section Mobile*/div[class*="actionLinkContainer"] a {/*@editable Action Link Size*/font-size:14px !important; /*@editable Action Text Color*//*@important*/color: #fff !important;/*@editable Link Underline*/text-decoration:none !important;/*@editable Button Color*//*@important*/background-color: #8ebbf7 !important;/*@editable Corner-Radius*//*@important*/border-radius: 2px  !important;padding:5px !important;}table[class*="sidebarOne"],table[class*="sidebarTwo"],table[class*="sidebarThree"],table[class*="sidebarL"],table[class*="sidebarR"]{ padding:5px 15px !important; border:0 !important; width: 100% !important; }table[class*="sidebarL"] tr:first-child td img,table[class*="sidebarR"] tr:first-child td img { padding-bottom:5px; }td[class*="main"]{ padding-bottom:5px !important; }/*** @section Mobile*/td[class*="titleSide"] { /*@editable Sidebar Header Font Size*/font-size:18px !important; line-height:1 !important; height:auto !important; /*@editable Sidebar Header Font Weight*/font-weight:normal !important;}/*** @section Mobile*/td[class*="textSide"] { /*@editable Sidebar Font Size*/font-size:14px !important; line-height:1 !important; height:auto !important;}/*** @section Mobile*/td[class*="textSide"] a { /*@editable Sidebar Link Font Size*/font-size:14px !important; }td[class*="spacer"],table[id="view_browser"] { display:none !important;}/*** @section Mobile*/table[id="footer"] { /*@editable Footer Font Size*/font-size:9px !important; }table[id="footer"] td{ display:block !important; width:100% !important;}table[id="footer"] td[class*="powered_by"]{ text-align:center !important; font-size:14px !important;}table[id="footer"] td[class*="powered_by"] img{ width:auto !important;}}
+        </style>
+
+        <!--[if lt IE 11]>
+        <style data="mobile-ie" data-condition="if lt IE 11" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)">@media only screen and (max-width: 480px), screen and (max-device-width: 480px) {ignore { rule-ignored: "why"; }table[class*="mainTable"] img, img { max-width:320px !important;}#header_img { width: 320px !important }div.ec_attachments, table, tbody, tr, td { width:100% !important;}}</style>
+        <![endif]-->
+
+    </head>
+    <body style="margin: 0;padding: 0;background-repeat: no-repeat;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px;width: 100% !important;display: block !important">
+        <table class="mainTable" style="background-color: #eeeeee" align="center" width="100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="pageTable" style="width: 606px;padding: 0;margin: 0 auto" align="center" width="606px">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table style="background-color: #eeeeee;width: 600px" cellspacing="0" cellpadding="0" border="0" align="center" id="view_browser">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="ec_item ecaction_edit" height="30" valign="middle">
+                                                        <p style="margin: 1em 0px;text-align: center;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 10px">If you are having trouble viewing this message, <a href="http://archive.skem1.com/Campaigner/Public/t.show?9cqsn--61t7b-177y5tv6" target="_blank">see it in your browser</a>.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="width: 600px" cellspacing="0" cellpadding="0" border="0" align="center" id="main">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="height: auto;padding: 0;margin: 0 auto;font-size: 0px;background-color: #ffffff" valign="top" id="header">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" data-block-group="header_image">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <p style="margin: 1em 0px;text-align: center" id="header_img"><img class="ec_img" style="height: auto !important;font-size: 14px" src="http://s3.amazonaws.com/tplbdr.emailcampaigns.net/default_header_solid_600.png" id="header_image" data-width="600"></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table style="margin: 0px auto;padding: 0" width="100%" cellspacing="0" cellpadding="0" border="0" id="page">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="main" style="background-color: #ffffff;padding: 15px" valign="top" id="content">
+                                                                        <table cellpadding="0" cellspacing="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <table class="ec_repeat" width="100%" cellspacing="0" cellpadding="0" data-block-group="main_column">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td valign="top" align="center">                                                                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item titleContent ecaction_edit" style="margin: 0;font-weight: normal;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 22px" valign="top" height="31">
+                                                                                                        <p style="margin: 0"><strong>Headline Style Placeholder</strong></p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item SubtitleContent ecaction_edit" style="margin: 0;font-weight: normal;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 18px" valign="top" height="29">
+                                                                                                        <p style="margin: 0">Subheading style placeholder</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item textContent ecaction_edit" style="color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px" valign="top">
+                                                                                                        <p style="margin: 0 0 12px 0">Your body text goes here. This is what a <a style="color: #0000FF" href="#" id="auto_lnk_id 2" name="auto_lnk_name 2">link</a> looks like. You can use the editor to create headings and paragraphs, and to apply styles and colors. You can also add more blocks like this one by clicking on the "plus" icon.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td valign="top">
+                                                                                                        <div class="actionLinkContainer" style="text-align: right;margin-top: 5px">                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px" href="#" id="auto_lnk_id 3" name="auto_lnk_name 3"><span class="ec_item ec_edit_small ecaction_edit" id="auto_lnk_id" name="auto_lnk_name">Read More</span></a>                                                                            </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="main" style="background-color: #ffffff">
+                                                                        <table class="ec_repeat twoColumn" width="100%" cellspacing="0" cellpadding="0" data-block-group="two_column">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top">
+                                                                                        <table class="sidebarL col_L" style="width: 48%;background-color: #ffffff" cellspacing="0" cellpadding="0" align="left">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="middle" align="center">                                                                         <img class="ec_img ec_defaultimg" style="height: auto !important" src="https://s3.amazonaws.com/tplbdr.emailcampaigns.net/default_placeholder_275.gif" align="left" data-width="270">                                                                       </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item titleSide ecaction_edit" style="padding: 0 10px;margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 16px" valign="middle" height="31">
+                                                                                                        <p style="margin: 1em 0px">Column header 1</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item textSide ecaction_edit" style="padding: 0 10px;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px">
+                                                                                                        <p style="margin: 1em 0px">Your body text goes here. This is what a <a style="color: #0000ff" href="#" id="auto_lnk_id 4" name="auto_lnk_name 4">link</a> looks like. You can use the editor to create headings and paragraphs, and to apply styles and colors. You can also add more blocks like this one by clicking on the "plus" icon.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="top">
+                                                                                                        <div class="actionLinkContainer" style="text-align: right;margin-top: 5px">                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px" href="#" id="auto_lnk_id 5" name="auto_lnk_name 5"><span class="ec_item ec_edit_small ecaction_edit" id="auto_lnk_id 2" name="auto_lnk_name 2">Read More</span></a>                                                                            </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <table class="sidebarR col_R" style="width: 48%;background-color: #ffffff;border-left: 1px solid;border-left-color: #DDDDDD" cellspacing="0" cellpadding="0" align="left">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="middle" align="center">                                                                         <img class="ec_img ec_defaultimg" style="height: auto !important" src="https://s3.amazonaws.com/tplbdr.emailcampaigns.net/default_placeholder_275.gif" align="left" data-width="270">                                                                       </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item titleSide ecaction_edit" style="padding: 0 10px;margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 16px" valign="middle" height="31">
+                                                                                                        <p style="margin: 1em 0px">Column header 2</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item textSide ecaction_edit" style="padding: 0 10px;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px">
+                                                                                                        <p style="margin: 1em 0px">Your body text goes here. This is what a <a style="color: #0000ff" href="#" id="auto_lnk_id 6" name="auto_lnk_name 6">link</a> looks like. You can use the editor to create headings and paragraphs, and to apply styles and colors. You can also add more blocks like this one by clicking on the "plus" icon.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="top">
+                                                                                                        <div class="actionLinkContainer" style="text-align: right;margin-top: 5px">                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px" href="#" id="auto_lnk_id 7" name="auto_lnk_name 7"><span class="ec_item ec_edit_small ecaction_edit" id="auto_lnk_id 3" name="auto_lnk_name 3">Read More</span></a>                                                                            </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="main" style="background-color: #ffffff">
+                                                                        <table class="ec_repeat threeColumn" width="100%" cellspacing="0" cellpadding="0" data-block-group="three_column">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top">
+                                                                                        <table class="sidebarOne col_One" style="width: 31%;background-color: #ffffff" cellspacing="0" cellpadding="0" align="left">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="middle" align="center">                                                                         <img class="ec_img ec_defaultimg" style="height: auto !important" src="http://s3.amazonaws.com/tplbdr.emailcampaigns.net/default_placeholder_172.gif" align="left" data-width="172">                                                                        </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item titleSide ecaction_edit" style="padding: 0 10px;margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 16px" valign="middle" height="31">
+                                                                                                        <p style="margin: 1em 0px">Column header 1</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item textSide ecaction_edit" style="padding: 0 10px;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px">
+                                                                                                        <p style="margin: 1em 0px">Your body text goes here. This is what a <a style="color: #0000ff" href="#" id="auto_lnk_id 8" name="auto_lnk_name 8">link</a> looks like. You can use the editor to create headings and paragraphs, and to apply styles and colors. You can also add more blocks like this one by clicking on the "plus" icon.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="top">
+                                                                                                        <div class="actionLinkContainer" style="text-align: right;margin-top: 5px">                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px" href="#" id="auto_lnk_id 9" name="auto_lnk_name 9"><span class="ec_item ec_edit_small ecaction_edit" id="auto_lnk_id 4" name="auto_lnk_name 4">Read More</span></a>                                                                            </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <table class="sidebarTwo col_Two" style="width: 31%;background-color: #ffffff;border-left: 1px solid;border-left-color: #DDDDDD" cellspacing="0" cellpadding="0" align="left">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="middle" align="center">                                                                         <img class="ec_img ec_defaultimg" style="height: auto !important" src="http://s3.amazonaws.com/tplbdr.emailcampaigns.net/default_placeholder_172.gif" align="left" data-width="172">                                                                        </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item titleSide ecaction_edit" style="padding: 0 10px;margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 16px" valign="middle" height="31">
+                                                                                                        <p style="margin: 1em 0px">Column header 2</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item textSide ecaction_edit" style="padding: 0 10px;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px">
+                                                                                                        <p style="margin: 1em 0px">Your body text goes here. This is what a <a style="color: #0000ff" href="#" id="auto_lnk_id 10" name="auto_lnk_name 10">link</a> looks like. You can use the editor to create headings and paragraphs, and to apply styles and colors. You can also add more blocks like this one by clicking on the "plus" icon.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding: 0 10px" valign="top">
+                                                                                                        <div class="actionLinkContainer" style="text-align: right;margin-top: 5px">                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px" href="#" id="auto_lnk_id 11" name="auto_lnk_name 11"><span class="ec_item ec_edit_small ecaction_edit" id="auto_lnk_id 5" name="auto_lnk_name 5">Read More</span></a>                                                                          </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <table class="sidebarThree col_Three" style="width: 31%;background-color: #ffffff;border-left: 1px solid;border-left-color: #DDDDDD" cellspacing="0" cellpadding="0" align="left">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px"> </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding-left: 10px" valign="middle" align="center">                                                                          <img class="ec_img ec_defaultimg" style="height: auto !important" src="http://s3.amazonaws.com/tplbdr.emailcampaigns.net/default_placeholder_172.gif" align="left" data-width="172">                                                                        </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item titleSide ecaction_edit" style="padding-left: 10px;margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 16px" valign="middle" height="31">
+                                                                                                        <p style="margin: 1em 0px">Column header 3</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ec_item textSide ecaction_edit" style="padding-left: 10px;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px">
+                                                                                                        <p style="margin: 1em 0px">Your body text goes here. This is what a <a style="color: #0000ff" href="#" id="auto_lnk_id 12" name="auto_lnk_name 12">link</a> looks like. You can use the editor to create headings and paragraphs, and to apply styles and colors. You can also add more blocks like this one by clicking on the "plus" icon.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td style="padding-left: 10px" valign="top">
+                                                                                                        <div class="actionLinkContainer" style="text-align: right;margin-top: 5px">                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 12px" href="#" id="auto_lnk_id 13" name="auto_lnk_name 13"><span class="ec_item ec_edit_small ecaction_edit" id="auto_lnk_id 6" name="auto_lnk_name 6">Read More</span></a>                                                                          </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px"> </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table style="background-color: #dddddd;height: 40px;margin: 0 auto;padding: 10px;color: #3C3C3C;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;font-size: 11px" width="100%" id="footer">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="ec_item ecaction_edit">
+                                                                        <p style="margin: 1em 0px">This message sent to <strong>1james.riemermann@state.mn.us</strong> by  <strong>{FROM_EMAIL}</strong><br>Explore Minnesota<br>121 7th Place East<br>Suite 100<br>St. Paul, MN55101<br>You opted in to this list from:  (More info)<br><a href="http://click.skem1.com/form?9cqsn--nqp6-177y5tv3&sl=32&t=5">Unsubscribe</a> | <a href="http://click.skem1.com/form?9cqsn--nqp6-177y5tv3&sl=32&t=1">Manage Your Subscription</a>  | Forward to a Friend </p>
+                                                                    </td>
+                                                                    <td class="ec_item ecaction_edit" valign="top"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" id="attachments">
+                                                        <div class="ec_attachments" style="width: 500px;margin: 20px 0;background-color: #fff;font-size: 13px;text-align: left;font-family: Arial, Verdana, Geneva, Helvetica, sans-serif">                                         </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
