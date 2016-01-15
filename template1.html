@@ -8,42 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Subject Goes Here</title>
 
-        <!-- Outlook Only Styles -->
-        <!--[if (gte mso 9)|(IE)]>
-        <style type="text/css">
-            table {
-                border-collapse: collapse;
-            }
-            .things-to-do-img {
-                width: 39% !important;
-            }
-            .things-to-do-content {
-                width: 59% !important;
-            }
-            .things-to-do-img img {
-                width: 216px !important;
-            }
-            .col_One, .col_Two, .col_Three {
-                width: 32% !important;
-            }
-            .col_L, .col_R {
-                width: 49% !important;
-            }
-            #promos img {
-                width: 158px !important;
-            }
-            #deals img {
-                width: 255px !important;
-            }
-            #footer .logo, #footer .subscription {
-                width: 59% !important;
-            }
-            #footer .social-media-icons, #footer .forward {
-                width: 39% !important;
-            }
-        </style>
-        <![endif]-->
-
         <style>
             p {
                 margin: 1em 0px;
@@ -818,14 +782,21 @@
                 .things-to-do-img {
                     padding-right: 0 !important;
                 }
+                .things-to-do-img img {
+                    width: 100% !important;
+                }
                 .things-to-do-content {
                     padding-left: 0 !important;
                 }
                 .things-to-do-content p {
                     margin: 1em 0 !important;
                 }
-                #promos .col_One img, #promos .col_Two img {
+                #promos img {
                     padding-bottom: 15px;
+                    width: 100% !important;
+                }
+                #deals img {
+                    width: 100% !important;
                 }
                 #footer .logo, #footer .social-media-icons, #footer .subscription, #footer .forward {
                     width: 320px !important;
@@ -853,7 +824,6 @@
                     height: 60px !important;
                     float: none !important;
                     display: inline !important;
-                    max-height: auto !important;
                 }
                 .subscribe-button-desktop {
                     display: none !important;
@@ -902,6 +872,9 @@
                 width: 40%;
                 padding-right: 15px;
             }
+            .things-to-do-img img {
+                width: 216px;
+            }
             .things-to-do-content {
                 width: 60%;
                 padding-left: 15px;
@@ -912,8 +885,14 @@
             #promos {
                 padding: 30px 15px;
             }
+            #promos img {
+                width: 158px;
+            }
             #deals {
                 padding: 0 30px;
+            }
+            #deals img {
+                width: 255px;
             }
             #deals > tbody > tr > td > table {
                 border-top: 1px solid #979797;
@@ -975,12 +954,50 @@
                 width: 0;
                 height: 0;
                 float: left;
-                max-height: 0; /* Gmail*/
                 display: none; /* Generic*/
                 mso-hide: all; /* Outlook clients*/
                 overflow: hidden; /* Generic */
             }
         </style>
+
+        <!-- Outlook Only Styles -->
+        <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+            table {
+                border-collapse: collapse;
+            }
+            #things-to-do {
+                border: 10px solid red !important;
+            }
+            .things-to-do-img {
+                width: 39% !important;
+            }
+            .things-to-do-content {
+                width: 59% !important;
+            }
+            .things-to-do-img img {
+                width: 216px !important;
+            }
+            .col_One, .col_Two, .col_Three {
+                width: 32% !important;
+            }
+            .col_L, .col_R {
+                width: 49% !important;
+            }
+            #promos img {
+                width: 158px !important;
+            }
+            #deals img {
+                width: 255px !important;
+            }
+            #footer .logo, #footer .subscription {
+                width: 59% !important;
+            }
+            #footer .social-media-icons, #footer .forward {
+                width: 39% !important;
+            }
+        </style>
+        <![endif]-->
 
         <!--[if lt IE 11]>
         <style data="mobile-ie" data-condition="if lt IE 11" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)">@media only screen and (max-width: 480px), screen and (max-device-width: 480px) {ignore { rule-ignored: "why"; }table[class*="mainTable"] img, img { max-width:320px !important;}#header_img { width: 320px !important }div.ec_attachments, table, tbody, tr, td { width:100% !important;}}</style>
@@ -1007,7 +1024,7 @@
                                                                 <tr>
                                                                     <td>
                                                                         <p style="margin: 0 !important;line-height: 1.375;text-align: center" id="header_img">
-                                                                            <img class="ec_img" style="height: auto !important;font-size: 14px;max-width: 100%" src="img/header.jpg" id="header_image" data-width="600">
+                                                                            <img class="ec_img" style="height: auto !important;font-size: 14px;max-width: 100%" src="https://secure.campaigner.com/media/49/490030/header.jpg" id="header_image" data-width="600">
                                                                         </p>
                                                                     </td>
                                                                 </tr>
@@ -1081,7 +1098,7 @@
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
-                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x260" align="left" data-width="260">
+                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 216px" src="http://placehold.it/260x260" align="left" data-width="260">
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
@@ -1103,7 +1120,7 @@
                                                                                                                     <td valign="top">
                                                                                                                         <div class="actionLinkContainer" style="text-align: left">
                                                                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Helvetica, Arial, sans-serif;font-size: 15px" href="#" id="auto_lnk_id 5" name="auto_lnk_name 5">
-                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="img/read-more-button.png" alt="Read More" align="left" data-width="175">
+                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="https://secure.campaigner.com/media/49/490030/read-more-button.png" alt="Read More" align="left" data-width="175">
                                                                                                                             </a>
                                                                                                                         </div>
                                                                                                                     </td>
@@ -1143,7 +1160,7 @@
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
-                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x260" align="left" data-width="260">
+                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 216px" src="http://placehold.it/260x260" align="left" data-width="260">
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
@@ -1165,7 +1182,7 @@
                                                                                                                     <td valign="top">
                                                                                                                         <div class="actionLinkContainer" style="text-align: left">
                                                                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Helvetica, Arial, sans-serif;font-size: 15px" href="#" id="auto_lnk_id 5" name="auto_lnk_name 5">
-                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="img/read-more-button.png" alt="Read More" align="left" data-width="175">
+                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="https://secure.campaigner.com/media/49/490030/read-more-button.png" alt="Read More" align="left" data-width="175">
                                                                                                                             </a>
                                                                                                                         </div>
                                                                                                                     </td>
@@ -1205,7 +1222,7 @@
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
-                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x260" align="left" data-width="260">
+                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 216px" src="http://placehold.it/260x260" align="left" data-width="260">
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
@@ -1227,7 +1244,7 @@
                                                                                                                     <td valign="top">
                                                                                                                         <div class="actionLinkContainer" style="text-align: left">
                                                                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Helvetica, Arial, sans-serif;font-size: 15px" href="#" id="auto_lnk_id 5" name="auto_lnk_name 5">
-                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="img/read-more-button.png" alt="Read More" align="left" data-width="175">
+                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="https://secure.campaigner.com/media/49/490030/read-more-button.png" alt="Read More" align="left" data-width="175">
                                                                                                                             </a>
                                                                                                                         </div>
                                                                                                                     </td>
@@ -1267,7 +1284,7 @@
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
-                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x260" align="left" data-width="260">
+                                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 216px" src="http://placehold.it/260x260" align="left" data-width="260">
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
@@ -1289,7 +1306,7 @@
                                                                                                                     <td valign="top">
                                                                                                                         <div class="actionLinkContainer" style="text-align: left">
                                                                                                                             <a class="ec_anchor ec_edit_small" style="color: #0000ff;font-family: Helvetica, Arial, sans-serif;font-size: 15px" href="#" id="auto_lnk_id 5" name="auto_lnk_name 5">
-                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="img/read-more-button.png" alt="Read More" align="left" data-width="175">
+                                                                                                                                <img class="read-more-button" style="height: auto !important;width: 175px" src="https://secure.campaigner.com/media/49/490030/read-more-button.png" alt="Read More" align="left" data-width="175">
                                                                                                                             </a>
                                                                                                                         </div>
                                                                                                                     </td>
@@ -1329,7 +1346,7 @@
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a href="#">
-                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x220" align="left" data-width="260">
+                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px" src="http://placehold.it/260x220" align="left" data-width="260">
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
@@ -1346,7 +1363,7 @@
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a href="#">
-                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x220" align="left" data-width="260">
+                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px" src="http://placehold.it/260x220" align="left" data-width="260">
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
@@ -1363,7 +1380,7 @@
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a href="#">
-                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x220" align="left" data-width="260">
+                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px" src="http://placehold.it/260x220" align="left" data-width="260">
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
@@ -1399,7 +1416,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="middle" align="center" style="padding-right: 15px">
-                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x205" align="left" data-width="260">
+                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 255px" src="http://placehold.it/260x205" align="left" data-width="260">
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
@@ -1431,7 +1448,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="middle" align="center" style="padding-left: 15px">
-                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%" src="http://placehold.it/260x205" align="left" data-width="260">
+                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 255px" src="http://placehold.it/260x205" align="left" data-width="260">
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
@@ -1501,7 +1518,7 @@
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a style="color: #FFFFFF;text-decoration: none;font-family: Arial Narrow, Arial, sans-serif;text-transform: uppercase;font-size: 18px;font-weight: bold" title="Talk to a Travel Counselor" href="tel:8888474866">
-                                                                                                            <img src="img/icon-phone.png" alt="Talk to a Travel Counselor" style="vertical-align: middle"/>
+                                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-phone.png" alt="Talk to a Travel Counselor" style="vertical-align: middle"/>
                                                                                                             <span style="vertical-align:middle;font-size: 18px"> 888-VISITMN</span>
                                                                                                         </a>
                                                                                                     </td>
@@ -1519,7 +1536,7 @@
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a style="color: #FFFFFF;text-decoration: none;font-family: Arial Narrow, Arial, sans-serif;text-transform: uppercase;font-size: 18px;font-weight: bold" title="Email Us" href="http://www.exploreminnesota.com/contactTravelCounselor.aspx">
-                                                                                                            <img src="img/icon-email.png" alt="Email Us" style="vertical-align: middle"/>
+                                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-email.png" alt="Email Us" style="vertical-align: middle"/>
                                                                                                             <span style="vertical-align:middle;font-size: 18px"> Email</span>
                                                                                                         </a>
                                                                                                     </td>
@@ -1537,7 +1554,7 @@
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a style="color: #FFFFFF;text-decoration: none;font-family: Arial Narrow, Arial, sans-serif;text-transform: uppercase;font-size: 18px;font-weight: bold" title="Live Chat" href="http://www.livehelpnow.net/lhn/livechatvisitor.aspx?lhnid=21600&zzwindow=0&custom1=&custom2=&custom3=">
-                                                                                                            <img src="img/icon-chat.png" alt="Live Chat" style="vertical-align: middle"/>
+                                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-chat.png" alt="Live Chat" style="vertical-align: middle"/>
                                                                                                             <span style="vertical-align:middle;font-size: 18px"> Live Chat</span>
                                                                                                         </a>
                                                                                                     </td>
@@ -1571,8 +1588,8 @@
                                                                                                     <td style="margin: 0;font-family: Helvetica, Arial, sans-serif" valign="top">
                                                                                                         <p style="margin: 0;line-height: 1.375;text-align: center">
                                                                                                             <a href="#" title="Subscribe to Receive This Newsletter and Other Reports">
-                                                                                                                <img class="subscribe-button-mobile" style="width: 0; height: 0;float: left;max-height: 0;display: none;mso-hide: all;overflow: hidden" src="img/subscribe-mobile.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
-                                                                                                                <img class="subscribe-button-desktop" src="img/subscribe-desktop.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
+                                                                                                                <img class="subscribe-button-mobile" style="width: 0; height: 0;float: left;display: none;mso-hide: all;overflow: hidden" src="https://secure.campaigner.com/media/49/490030/subscribe-mobile.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
+                                                                                                                <img class="subscribe-button-desktop" src="https://secure.campaigner.com/media/49/490030/subscribe-desktop.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
                                                                                                             </a>
                                                                                                         </p>
                                                                                                     </td>
@@ -1605,7 +1622,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <a href="http://www.exploreminnesota.com/index.aspx" title="Exploreminnesota.com">
-                                                                                            <img src="img/mn-logo.png" alt="Explore Minnesota Logo" />
+                                                                                            <img src="https://secure.campaigner.com/media/49/490030/mn-logo.png" alt="Explore Minnesota Logo" />
                                                                                         </a>
                                                                                     </td>
                                                                                 </tr>
@@ -1616,19 +1633,19 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <a href="http://www.facebook.com/ExploreMinnesota" title="Facebook" style="text-decoration: none">
-                                                                                            <img src="img/icon-facebook.jpg" alt="Facebook" />
+                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-facebook.jpg" alt="Facebook" />
                                                                                         </a>
                                                                                         <a href="https://www.twitter.com/ExploreMinn" title="Twitter" style="text-decoration: none">
-                                                                                            <img src="img/icon-twitter.jpg" alt="Twitter" />
+                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-twitter.jpg" alt="Twitter" />
                                                                                         </a>
                                                                                         <a href="http://www.youtube.com/user/ExploreMinnesota" title="YouTube" style="text-decoration: none">
-                                                                                            <img src="img/icon-youtube.jpg" alt="YouTube" />
+                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-youtube.jpg" alt="YouTube" />
                                                                                         </a>
                                                                                         <a href="http://www.pinterest.com/exploreminn/" title="Pinterest" style="text-decoration: none">
-                                                                                            <img src="img/icon-pinterest.jpg" alt="Pinterest" />
+                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-pinterest.jpg" alt="Pinterest" />
                                                                                         </a>
                                                                                         <a href="http://instagram.com/exploreminnesota" title="Instagram" style="text-decoration: none">
-                                                                                            <img src="img/icon-instagram.jpg" alt="Instagram" />
+                                                                                            <img src="https://secure.campaigner.com/media/49/490030/icon-instagram.jpg" alt="Instagram" />
                                                                                         </a>
                                                                                     </td>
                                                                                 </tr>
@@ -1638,7 +1655,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <img class="skyline" src="img/skyline.jpg" alt="Skyline Photo" style="vertical-align: bottom" />
+                                                                        <img class="skyline" src="https://secure.campaigner.com/media/49/490030/skyline.jpg" alt="Skyline Photo" style="vertical-align: bottom" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="subscription-forward" style="background-color: #000000">
