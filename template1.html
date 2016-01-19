@@ -976,30 +976,39 @@
                 width: 174px !important;
             }
             .col_One, .col_Two, .col_Three {
-                width: 30% !important;
+                width: 26% !important;
             }
             .col_L, .col_R {
-                width: 45% !important;
+                width: 42% !important;
             }
             #promos img {
-                width: 141px !important;
+                width: 129px !important;
             }
             #deals img {
-                width: 228px !important;
+                width: 216px !important;
             }
             #footer .logo, #footer .subscription {
-                width: 55% !important;
+                width: 53% !important;
             }
             #footer .social-media-icons, #footer .forward {
-                width: 35% !important;
+                width: 37% !important;
             }
             .subscribe-button-mobile {
                 width: 0;
                 height: 0;
                 float: left;
-                display: none; /* Generic*/
-                mso-hide: all; /* Outlook clients*/
+                display: none; /* Generic */
+                mso-hide: all; /* Outlook clients */
                 overflow: hidden; /* Generic */
+            }
+            .spacer {
+                width: 0;
+                height: 0;
+                display: none; /* Generic */
+                mso-hide: all; /* Outlook clients */
+                overflow: hidden; /* Generic */
+                font-size: 0 !important;
+                height: 0 !important;
             }
         </style>
         <![endif]-->
@@ -1441,7 +1450,7 @@
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarR col_R" style="width: 50%;background-color: #ffffff;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="left" width="50%">
+                                                                                        <table class="sidebarR col_R" style="width: 50%;background-color: #ffffff;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="right" width="50%">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td class="spacer" style="font-size: 10px;padding: 0"> </td>
@@ -1593,7 +1602,9 @@
                                                                                                     <td style="margin: 0;font-family: Helvetica, Arial, sans-serif" valign="top">
                                                                                                         <p style="margin: 0;line-height: 1.375;text-align: center">
                                                                                                             <a href="#" title="Subscribe to Receive This Newsletter and Other Reports">
-                                                                                                                <img class="subscribe-button-mobile" style="width: 0; height: 0;float: left;display: none;mso-hide: all;overflow: hidden" src="https://secure.campaigner.com/media/49/490030/subscribe-mobile.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
+                                                                                                                <!--[if !mso]><!-- -->
+                                                                                                                    <img class="subscribe-button-mobile" style="width: 0; height: 0;float: left;display: none;mso-hide: all;overflow: hidden" src="https://secure.campaigner.com/media/49/490030/subscribe-mobile.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
+                                                                                                                <!--<![endif]-->
                                                                                                                 <img class="subscribe-button-desktop" src="https://secure.campaigner.com/media/49/490030/subscribe-desktop.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
                                                                                                             </a>
                                                                                                         </p>
