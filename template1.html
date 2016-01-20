@@ -2,11 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <!--[if !mso]><!-->
+        <!--[if !mso]>
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!--<![endif]-->
+        <![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Subject Goes Here</title>
+    </head>
+    <body style="margin: 0;padding: 0;background-repeat: no-repeat;font-family: Helvetica, Arial, sans-serif;font-size: 15px;width: 100% !important;display: block !important">
 
         <style>
             p {
@@ -367,7 +369,7 @@
             .col_One {
                 /*@editable Col 1 of 3 Width*/
                 
-                width: 33%;
+                width: 32%;
                 /*@editable Col 1 of 3 Background*/
                 /*@theme body-background-color*/
                 
@@ -378,7 +380,7 @@
             .col_Two {
                 /*@editable Col 2 of 3 Width*/
                 
-                width: 33%;
+                width: 32%;
                 /*@editable Col 2 of 3 Background*/
                 /*@theme body-background-color*/
                 
@@ -389,7 +391,7 @@
             .col_Three {
                 /*@editable Col 3 of 3 Width*/
                 
-                width: 33%;
+                width: 32%;
                 /*@editable Col 3 of 3 Background*/
                 /*@theme body-background-color*/
                 
@@ -955,13 +957,13 @@
                 height: 0;
                 float: left;
                 display: none; /* Generic*/
-                mso-hide: all; /* Outlook clients*/
+                mso-hide: all !important; /* Outlook clients*/
                 overflow: hidden; /* Generic */
             }
         </style>
 
         <!-- Outlook Only Styles -->
-        <!--[if (gte mso 9)|(IE)]>
+        <!--[if mso]>
         <style type="text/css">
             table {
                 border-collapse: collapse;
@@ -975,17 +977,17 @@
             .things-to-do-img img {
                 width: 174px !important;
             }
-            .col_One, .col_Two, .col_Three {
-                width: 26% !important;
+            /*.col_One, .col_Two, .col_Three {
+                width: 30% !important;
             }
             .col_L, .col_R {
-                width: 42% !important;
+                width: 45% !important;
             }
             #promos img {
-                width: 129px !important;
-            }
+                width: 141px !important;
+            }*/
             #deals img {
-                width: 216px !important;
+                width: 228px !important;
             }
             #footer .logo, #footer .subscription {
                 width: 53% !important;
@@ -994,19 +996,19 @@
                 width: 37% !important;
             }
             .subscribe-button-mobile {
-                width: 0;
-                height: 0;
-                float: left;
-                display: none; /* Generic */
-                mso-hide: all; /* Outlook clients */
-                overflow: hidden; /* Generic */
+                width: 0 !important;
+                height: 0 !important;
+                float: left !important;
+                display: none !important; /* Generic */
+                mso-hide: all !important; /* Outlook clients */
+                overflow: hidden !important; /* Generic */
             }
             .spacer {
-                width: 0;
-                height: 0;
-                display: none; /* Generic */
-                mso-hide: all; /* Outlook clients */
-                overflow: hidden; /* Generic */
+                width: 0 !important;
+                height: 0 !important;
+                display: none !important; /* Generic */
+                mso-hide: all !important; /* Outlook clients */
+                overflow: hidden !important; /* Generic */
                 font-size: 0 !important;
                 height: 0 !important;
             }
@@ -1017,8 +1019,6 @@
         <style data="mobile-ie" data-condition="if lt IE 11" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)">@media only screen and (max-width: 480px), screen and (max-device-width: 480px) {ignore { rule-ignored: "why"; }table[class*="mainTable"] img, img { max-width:320px !important;}#header_img { width: 320px !important }div.ec_attachments, table, tbody, tr, td { width:100% !important;}}</style>
         <![endif]-->
 
-    </head>
-    <body style="margin: 0;padding: 0;background-repeat: no-repeat;font-family: Helvetica, Arial, sans-serif;font-size: 15px;width: 100% !important;display: block !important">
         <table class="mainTable" style="background-color: #eeeeee" align="center" width="100%" cellspacing="0" cellpadding="0" border="0">
             <tbody>
                 <tr>
@@ -1096,7 +1096,7 @@
                                                                                         <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -1108,7 +1108,7 @@
                                                                                                         <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -1116,14 +1116,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                         <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -1140,14 +1140,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1158,7 +1158,7 @@
                                                                                         <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -1170,7 +1170,7 @@
                                                                                                         <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -1178,14 +1178,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                         <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -1202,14 +1202,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1220,7 +1220,7 @@
                                                                                         <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -1232,7 +1232,7 @@
                                                                                                         <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -1240,14 +1240,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                         <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -1264,14 +1264,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1282,7 +1282,7 @@
                                                                                         <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -1294,7 +1294,7 @@
                                                                                                         <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -1302,14 +1302,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                         <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -1326,14 +1326,14 @@
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                 <tr>
-                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1352,54 +1352,54 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td valign="top">
-                                                                                        <table class="sidebarOne col_One" style="width: 33%;background-color: #ffffff" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table class="sidebarOne col_One" style="width: 32%;background-color: #ffffff" cellspacing="0" cellpadding="0" border="0" align="left" width="32%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a href="#">
-                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px" src="http://placehold.it/260x220" align="left" data-width="260">
+                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px;mso-hide: all !important" src="http://placehold.it/260x220" align="left" data-width="260">
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarTwo col_Two" style="width: 33%;background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table class="sidebarTwo col_Two" style="width: 32%;background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="left" width="32%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a href="#">
-                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px" src="http://placehold.it/260x220" align="left" data-width="260">
+                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px;mso-hide: all !important" src="http://placehold.it/260x220" align="left" data-width="260">
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarThree col_Three" style="width: 33%;background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table class="sidebarThree col_Three" style="width: 32%;background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="left" width="32%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a href="#">
-                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px" src="http://placehold.it/260x220" align="left" data-width="260">
+                                                                                                            <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 158px;mso-hide: all !important" src="http://placehold.it/260x220" align="left" data-width="260">
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1421,7 +1421,7 @@
                                                                                         <table class="sidebarL col_L" style="width: 50%;background-color: #ffffff;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="left" width="50%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px;padding-right: 15px" valign="middle">
@@ -1446,14 +1446,14 @@
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
                                                                                         <table class="sidebarR col_R" style="width: 50%;background-color: #ffffff;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="right" width="50%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px;padding-left: 15px" valign="middle">
@@ -1478,7 +1478,7 @@
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1524,10 +1524,10 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td valign="top">
-                                                                                        <table class="sidebarOne col_One" style="width: 33%;background-color: #323232" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table class="sidebarOne col_One" style="width: 32%;background-color: #323232" cellspacing="0" cellpadding="0" border="0" align="left" width="32%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
@@ -1538,14 +1538,14 @@
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarTwo col_Two" style="width: 33%;background-color: #323232;" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table class="sidebarTwo col_Two" style="width: 32%;background-color: #323232;" cellspacing="0" cellpadding="0" border="0" align="left" width="32%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
@@ -1556,14 +1556,14 @@
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarThree col_Three" style="width: 33%;background-color: #323232;" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table class="sidebarThree col_Three" style="width: 32%;background-color: #323232;" cellspacing="0" cellpadding="0" border="0" align="left" width="32%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
@@ -1574,7 +1574,7 @@
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px"> </td>
+                                                                                                    <td class="spacer" style="font-size: 10px;padding: 0;padding-left: 10px;mso-hide: all !important"> </td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -1602,9 +1602,9 @@
                                                                                                     <td style="margin: 0;font-family: Helvetica, Arial, sans-serif" valign="top">
                                                                                                         <p style="margin: 0;line-height: 1.375;text-align: center">
                                                                                                             <a href="#" title="Subscribe to Receive This Newsletter and Other Reports">
-                                                                                                                <!--[if !mso]><!-- -->
-                                                                                                                    <img class="subscribe-button-mobile" style="width: 0; height: 0;float: left;display: none;mso-hide: all;overflow: hidden" src="https://secure.campaigner.com/media/49/490030/subscribe-mobile.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
-                                                                                                                <!--<![endif]-->
+                                                                                                                <!--[if !mso]>
+                                                                                                                    <img class="subscribe-button-mobile" style="width: 0; height: 0;float: left;display: none;mso-hide: all !important;overflow: hidden" src="https://secure.campaigner.com/media/49/490030/subscribe-mobile.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
+                                                                                                                <![endif]-->
                                                                                                                 <img class="subscribe-button-desktop" src="https://secure.campaigner.com/media/49/490030/subscribe-desktop.png" alt="Subscribe to Receive This Newsletter and Other Reports" />
                                                                                                             </a>
                                                                                                         </p>
