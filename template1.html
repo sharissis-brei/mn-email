@@ -11,9 +11,28 @@
     <body style="margin: 0;padding: 0;background-repeat: no-repeat;font-family: Helvetica, Arial, sans-serif;font-size: 15px;width: 100% !important;display: block !important">
 
         <style>
+            * {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-repeat: no-repeat;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 15px;
+                width: 100% !important;
+                display: block !important;
+            }
             p {
                 margin: 1em 0px;
                 line-height: 1.375;
+            }
+            img {
+                max-width: 100%;
+            }
+            a img {
+                border: none;
             }
             table {
                 border-spacing: 0;
@@ -26,15 +45,19 @@
                 padding: 0;
                 margin: 0 auto;
             }
-            #view_browser {
-                background-color: #eeeeee;
+            #page {
+                background-color: #ffffff;
+                margin: 0px auto;
+                padding: 0;
+            }
+            #main {
+                width: 600px;
             }
             #header {
                 height: auto;
                 padding: 0;
                 margin: 0 auto;
                 font-size: 0px;
-                background-color: #ffffff;
             }
             #header p {
                 margin: 0 !important;
@@ -49,6 +72,41 @@
                 padding: 20px 30px;
                 background-color: #333333;
             }
+            #content .titleContent {
+                margin: 0;
+                font-weight: normal;
+                color: #3C3C3C;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 22px;
+            }
+            #content .SubtitleContent {
+                margin: 0;
+                font-weight: normal;
+                color: #3C3C3C;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 18px;
+            }
+            #content .textContent,
+            #content ul,
+            #content ol {
+                color: #3C3C3C;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 15px;
+            }
+            #content a {
+                color: #6fb83b;
+            }
+            #content .titleContent {
+                margin: 0 0 10px;
+                color: #4298cc;
+                font-size: 32px;
+                line-height: 1;
+            }
+            #content .textContent {
+                margin: 0;
+                color: #FFFFFF;
+                font-size: 21px;
+            }
             .sidebarL, .sidebarR {
                 padding: 30px 0;
             }
@@ -57,26 +115,6 @@
             }
             .sidebarR td {
                 padding-left: 15px;
-            }
-            .col_L,
-            .col_R {
-                width: 269px;
-                background-color: #ffffff;
-            }
-            .main {
-                background-color: #ffffff;
-            }
-            #footer {
-                background-color: #323232;
-            }
-            #view_browser p {
-                text-align: center;
-                color: #3C3C3C;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 10px;
-            }
-            #view_browser a {
-                color: #0000FF;
             }
             .sidebarL .titleSide {
                 margin: 5px 0 0 0;
@@ -138,25 +176,14 @@
                 font-family: Helvetica, Arial, sans-serif;
                 font-size: 15px;
             }
+            .col_L,
+            .col_R {
+                width: 269px;
+            }
             .col_One,
             .col_Two,
             .col_Three {
                 width: 182px;
-                background-color: #ffffff;
-            }
-            #content .titleContent {
-                margin: 0;
-                font-weight: normal;
-                color: #3C3C3C;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 22px;
-            }
-            #content .SubtitleContent {
-                margin: 0;
-                font-weight: normal;
-                color: #3C3C3C;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 18px;
             }
             .titleContent p,
             .SubtitleContent p,
@@ -166,16 +193,6 @@
             .textContent p {
                 margin: 0 0 12px 0;
                 line-height: 1.25;
-            }
-            #content .textContent,
-            #content ul,
-            #content ol {
-                color: #3C3C3C;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 15px;
-            }
-            #content a {
-                color: #6fb83b;
             }
             .actionLinkContainer {
                 text-align: left;
@@ -187,280 +204,14 @@
                 font-family: Helvetica, Arial, sans-serif;
                 font-size: 15px;
             }
-            #footer {
-                height: 40px;
-                margin: 0 auto;
-                color: #3C3C3C;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 11px;
-            }
-            #footer .unsubscribe a, #footer .subscription a, #footer .separator {
-                color: #FFFFFF;
-            }
-            #footer .forward p {
-                text-align: right;
-            }
-            #footer .forward a {
-                color: #6fb83b;
-                text-decoration: none;
-            }
-            #footer .logo {
-                width: 60%;
-                padding: 15px 0 15px 25px;
-            }
-            #footer .social-media-icons {
-                width: 39%;
-                padding: 15px 25px 15px 0;
-            }
-            #footer .social-media-icons a {
-                text-decoration: none;
-            }
-            #footer .skyline {
-                vertical-align: bottom;
-            }
-            #footer .subscription-forward {
-                background-color: #000000;
-            }
-            #footer .subscription p, #footer .forward p {
-                margin: 0;
-            }
-            #footer .subscription {
-                padding: 15px 0 15px 25px;
-            }
-            #footer .forward {
-                padding: 15px 25px 15px 0;
-            }
-            body {
-                margin: 0;
-                padding: 0;
-                background-repeat: no-repeat;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 15px;
-                width: 100% !important;
-                display: block !important;
-            }
-            div.ec_attachments {
-                width: 500px;
-                margin: 20px 0;
-                background-color: #fff;
-                font-size: 13px;
-                text-align: left;
-                font-family: Helvetica, Arial, sans-serif;
-            }
-            div.ec_attachments li {
-                border-top: 1px solid #cccccc;
-                padding: 10px;
-            }
-            div.ec_attachments ul {
-                padding-right: 40px;
-            }
-            div.ec_attachments_text {
-                padding: 10px 0 0 10px;
-            }
-            #attachments div.ecaction_edit {
-                border: 1px solid #cccccc;
-            }
-            #page {
-                margin: 0px auto;
-                padding: 0;
-            }
-            #view_browser {
-                width: 600px;
-            }
-            a img {
-                border: none;
-            }
-            #main {
-                width: 600px;
-            }
             .mainTable img {
                 height: auto !important;
-            }
-        </style>
-        
-        <style data="noinline" id="ignore">
-            body { width: 100% !important; /* Hotmail Fix */ }
-        </style>
-
-        <style data="mobile" data-title="Mobile" data-width="335" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)" id="ignore">
-            @media only screen and (max-width: 480px), screen and (max-device-width: 480px) {
-                body {
-                    -webkit-text-size-adjust: 100%;
-                    line-height: 125%;
-                }
-                #header_img {
-                    line-height: normal !important;
-                }
-                table[class*="mainTable"] img,
-                td[id="content"] img,
-                td[id="sidebarL"] img,
-                td[id="sidebarR"] img {
-                    height: auto !important;
-                }
-                table[class="pageTable"],
-                table[id="main"],
-                div[class="ec_attachments"] {
-                    width: 320px !important;
-                }
-                td[class*="textContent"],
-                td[class*="textSide"] {
-                    font-size: 14px !important;
-                }
-                td.titleContent {
-                    font-size: 20px !important;
-                    line-height: 1 !important;
-                    height: auto !important;
-                }
-                td[class*="SubtitleContent"] {
-                    font-size: 18px !important;
-                    line-height: 1 !important;
-                    height: auto !important;
-                    font-weight: bold !important;
-                }
-                td[class*="textContent"] {
-                    font-size: 14px !important;
-                    line-height: 1 !important;
-                    height: auto !important;
-                }
-                td[class*="textContent"] a {
-                    font-size: 14px !important;
-                }
-                div[class*="actionLinkContainer"] a {
-                    text-decoration: none !important;
-                }
-                table[class*="sidebarOne"],
-                table[class*="sidebarTwo"],
-                table[class*="sidebarThree"],
-                table[class*="sidebarL"],
-                table[class*="sidebarR"] {
-                    width: 100% !important;
-                }
-                table[class*="sidebarL"] tr:first-child td img,
-                table[class*="sidebarR"] tr:first-child td img {
-                    padding-bottom: 5px;
-                }
-                td[class*="titleSide"] {
-                    font-size: 18px !important;
-                    line-height: 1 !important;
-                    height: auto !important;
-                    font-weight: normal !important;
-                }
-                td[class*="textSide"] {
-                    font-size: 14px !important;
-                    line-height: 1 !important;
-                    height: auto !important;
-                }
-                td[class*="textSide"] a {
-                    font-size: 14px !important;
-                }
-                table[id="view_browser"] {
-                    display: none !important;
-                }
-                table[id="footer"] td {
-                    display: block !important;
-                    width: 100% !important;
-                }
-                table[id="footer"] td[class*="powered_by"] {
-                    text-align: center !important;
-                    font-size: 14px !important;
-                }
-                table[id="footer"] td[class*="powered_by"] img {
-                    width: auto !important;
-                }
-                .sidebarL td {
-                    padding-right: 0 !important;
-                }
-                .sidebarR td {
-                    padding-left: 0 !important;
-                }
-                .things-to-do-img,
-                .things-to-do-content {
-                    width: 100% !important;
-                }
-                .things-to-do-img {
-                    padding-right: 0 !important;
-                }
-                .things-to-do-img img {
-                    width: 100% !important;
-                }
-                .things-to-do-content {
-                    padding-left: 0 !important;
-                }
-                .things-to-do-content p {
-                    margin: 1em 0 !important;
-                }
-                #promos img {
-                    padding-bottom: 15px;
-                    width: 100% !important;
-                }
-                #deals img {
-                    width: 100% !important;
-                }
-                #footer .logo,
-                #footer .social-media-icons,
-                #footer .subscription,
-                #footer .forward {
-                    width: 320px !important;
-                }
-                #footer .logo {
-                     padding: 20px 25px 5px !important;
-                }
-                #footer .social-media-icons {
-                    padding: 0 25px !important;
-                }
-                #contact-links .col_One,
-                #contact-links .col_Two,
-                #contact-links .col_Three {
-                    margin: 5px 0;
-                }
-                #footer .subscription {
-                    padding: 15px 25px 10px !important;
-                }
-                #footer .forward {
-                    padding: 0 25px 15px !important;
-                }
-                #footer .forward p {
-                    text-align: left !important;
-                }
-                .subscribe-button-mobile {
-                    width: 175px !important;
-                    height: 60px !important;
-                    float: none !important;
-                    display: inline !important;
-                }
-                .subscribe-button-desktop {
-                    display: none !important;
-                }
-            }
-        </style>
-
-        <style data="desktop" data-title="Desktop" data-width="481" data-rule="@media only screen and (min-width: 481px), screen and (min-device-width: 481px)" id="ignore-2">
-            .subscribe-button-mobile {
-                display: none;
-            }
-        </style>
-
-        <style>
-            * {
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
             }
             .titleSide p {
                 margin: 0 0 1em;
                 font-size: 21px;
                 color: #32abf4;
                 line-height: 1;
-            }
-            #content .titleContent {
-                margin: 0 0 10px;
-                color: #4298cc;
-                font-size: 32px;
-                line-height: 1;
-            }
-            #content .textContent {
-                margin: 0;
-                color: #FFFFFF;
-                font-size: 21px;
             }
             #things-to-do {
                 padding: 0 30px;
@@ -527,7 +278,7 @@
                 vertical-align: middle;
             }
             #contact-links a span {
-                font-size: 18px;
+                font-size: 20px;
             }
             #contact-links .col_One,
             #contact-links .col_Two,
@@ -538,14 +289,58 @@
                 background-color: #FFFFFF;
                 padding: 30px;
             }
+            #footer {
+                background-color: #323232;
+                height: 40px;
+                margin: 0 auto;
+                color: #3C3C3C;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 11px;
+            }
+            #footer .unsubscribe a,
+            #footer .subscription a,
+            #footer .separator {
+                color: #FFFFFF;
+            }
+            #footer .forward p {
+                text-align: right;
+            }
+            #footer .forward a {
+                color: #6fb83b;
+                text-decoration: none;
+            }
+            #footer .logo {
+                width: 60%;
+                padding: 15px 0 15px 25px;
+            }
+            #footer .social-media-icons {
+                width: 39%;
+                padding: 15px 25px 15px 0;
+            }
+            #footer .social-media-icons a {
+                text-decoration: none;
+            }
+            #footer .skyline {
+                vertical-align: bottom;
+            }
+            #footer .subscription-forward {
+                background-color: #000000;
+            }
+            #footer .subscription p,
+            #footer .forward p {
+                margin: 0;
+            }
+            #footer .subscription {
+                padding: 15px 0 15px 25px;
+            }
+            #footer .forward {
+                padding: 15px 25px 15px 0;
+            }
             #footer .subscription {
                 width: 60%;
             }
             #footer .forward {
                 width: 39%;
-            }
-            img {
-                max-width: 100%;
             }
             .read-more-link {
                 color: #6fb83b;
@@ -563,6 +358,164 @@
                 display: none; /* Generic */
                 mso-hide: all !important; /* Outlook clients */
                 overflow: hidden; /* Generic */
+            }
+        </style>
+        
+        <style data="noinline" id="ignore">
+            body { width: 100% !important; /* Hotmail Fix */ }
+        </style>
+
+        <style data="mobile" data-title="Mobile" data-width="335" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)" id="ignore">
+            @media only screen and (max-width: 480px), screen and (max-device-width: 480px) {
+                body {
+                    -webkit-text-size-adjust: 100%;
+                    line-height: 125%;
+                }
+                #header_img {
+                    line-height: normal !important;
+                }
+                table[class*="mainTable"] img,
+                td[id="content"] img,
+                td[id="sidebarL"] img,
+                td[id="sidebarR"] img {
+                    height: auto !important;
+                }
+                table[class="pageTable"],
+                table[id="main"] {
+                    width: 320px !important;
+                }
+                td[class*="textContent"],
+                td[class*="textSide"] {
+                    font-size: 14px !important;
+                }
+                td.titleContent {
+                    font-size: 20px !important;
+                    line-height: 1 !important;
+                    height: auto !important;
+                }
+                td[class*="SubtitleContent"] {
+                    font-size: 18px !important;
+                    line-height: 1 !important;
+                    height: auto !important;
+                    font-weight: bold !important;
+                }
+                td[class*="textContent"] {
+                    font-size: 14px !important;
+                    line-height: 1 !important;
+                    height: auto !important;
+                }
+                td[class*="textContent"] a {
+                    font-size: 14px !important;
+                }
+                div[class*="actionLinkContainer"] a {
+                    text-decoration: none !important;
+                }
+                table[class*="sidebarOne"],
+                table[class*="sidebarTwo"],
+                table[class*="sidebarThree"],
+                table[class*="sidebarL"],
+                table[class*="sidebarR"] {
+                    width: 100% !important;
+                }
+                table[class*="sidebarL"] tr:first-child td img,
+                table[class*="sidebarR"] tr:first-child td img {
+                    padding-bottom: 5px;
+                }
+                td[class*="titleSide"] {
+                    font-size: 18px !important;
+                    line-height: 1 !important;
+                    height: auto !important;
+                    font-weight: normal !important;
+                }
+                td[class*="textSide"] {
+                    font-size: 14px !important;
+                    line-height: 1 !important;
+                    height: auto !important;
+                }
+                td[class*="textSide"] a {
+                    font-size: 14px !important;
+                }
+                table[id="footer"] td {
+                    display: block !important;
+                    width: 100% !important;
+                }
+                table[id="footer"] td[class*="powered_by"] {
+                    text-align: center !important;
+                    font-size: 14px !important;
+                }
+                table[id="footer"] td[class*="powered_by"] img {
+                    width: auto !important;
+                }
+                .sidebarL td {
+                    padding-right: 0 !important;
+                }
+                .sidebarR td {
+                    padding-left: 0 !important;
+                }
+                .things-to-do-img,
+                .things-to-do-content {
+                    width: 100% !important;
+                }
+                .things-to-do-img {
+                    padding-right: 0 !important;
+                }
+                .things-to-do-img img {
+                    width: 100% !important;
+                }
+                .things-to-do-content {
+                    padding-left: 0 !important;
+                }
+                .things-to-do-content p {
+                    margin: 1em 0 !important;
+                }
+                #promos img {
+                    padding-bottom: 15px;
+                    width: 100% !important;
+                }
+                #deals img {
+                    width: 100% !important;
+                }
+                #contact-links .col_One,
+                #contact-links .col_Two,
+                #contact-links .col_Three {
+                    margin: 5px 0;
+                }
+                #footer .logo,
+                #footer .social-media-icons,
+                #footer .subscription,
+                #footer .forward {
+                    width: 320px !important;
+                }
+                #footer .logo {
+                     padding: 20px 25px 5px !important;
+                }
+                #footer .social-media-icons {
+                    padding: 0 25px !important;
+                }
+                #footer .subscription {
+                    padding: 15px 25px 10px !important;
+                }
+                #footer .forward {
+                    padding: 0 25px 15px !important;
+                }
+                #footer .forward p {
+                    text-align: left !important;
+                }
+                .subscribe-button-mobile {
+                    width: 175px !important;
+                    height: 60px !important;
+                    float: none !important;
+                    display: inline !important;
+                }
+                .subscribe-button-desktop {
+                    display: none !important;
+                }
+            }
+        </style>
+
+        <style data="desktop" data-title="Desktop" data-width="481" data-rule="@media only screen and (min-width: 481px), screen and (min-device-width: 481px)" id="ignore-2">
+            .subscribe-button-mobile {
+                display: none;
             }
         </style>
 
@@ -604,6 +557,10 @@
             #footer .forward {
                 width: 37% !important;
             }
+            #contact-links a img,
+            #contact-links a span {
+                vertical-align: top !important;
+            }
             .subscribe-button-mobile {
                 width: 0 !important;
                 height: 0 !important;
@@ -616,7 +573,7 @@
         <![endif]-->
 
         <!--[if lt IE 11]>
-        <style data="mobile-ie" data-condition="if lt IE 11" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)">@media only screen and (max-width: 480px), screen and (max-device-width: 480px) {ignore { rule-ignored: "why"; }table[class*="mainTable"] img, img { max-width:320px !important;}#header_img { width: 320px !important }div.ec_attachments, table, tbody, tr, td { width:100% !important;}}</style>
+        <style data="mobile-ie" data-condition="if lt IE 11" data-rule="@media only screen and (max-width: 480px), screen and (max-device-width: 480px)">@media only screen and (max-width: 480px), screen and (max-device-width: 480px) {ignore { rule-ignored: "why"; }table[class*="mainTable"] img, img { max-width:320px !important;}#header_img { width: 320px !important }table, tbody, tr, td { width:100% !important;}}</style>
         <![endif]-->
 
         <table class="mainTable" style="background-color: #eeeeee" align="center" width="100%" cellspacing="0" cellpadding="0" border="0">
@@ -632,7 +589,7 @@
 
                                                 <!-- HEADER START -->
                                                 <tr>
-                                                    <td id="header" style="height: auto;padding: 0;margin: 0 auto;font-size: 0px;background-color: #ffffff" valign="top">
+                                                    <td id="header" style="height: auto;padding: 0;margin: 0 auto;font-size: 0px" valign="top">
                                                         <table width="100%" cellspacing="0" cellpadding="0" border="0" data-block-group="header_image">
                                                             <tbody>
                                                                 <tr>
@@ -651,7 +608,7 @@
                                                 <!-- "BODY" START -->
                                                 <tr>
                                                     <td>
-                                                        <table id="page" style="margin: 0px auto;padding: 0" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                        <table id="page" style="background-color: #ffffff;margin: 0px auto;padding: 0" width="100%" cellspacing="0" cellpadding="0" border="0">
                                                             <tbody>
 
                                                                 <!-- START HEADING -->
@@ -688,12 +645,12 @@
 
                                                                 <!-- THINGS TO DO START -->
                                                                 <tr>
-                                                                    <td class="main" style="background-color: #ffffff">
+                                                                    <td class="main">
                                                                         <table id="things-to-do" class="ec_repeat" width="100%" cellspacing="0" cellpadding="0" border="0" data-block-group="one_column" style="padding: 0 30px">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td valign="top" style="border-bottom: 1px solid #979797">
-                                                                                        <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table width="100%" style="padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -702,7 +659,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="top">
-                                                                                                        <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
+                                                                                                        <table class="things-to-do-img" style="width: 39%;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -711,7 +668,7 @@
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
-                                                                                                        <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
+                                                                                                        <table class="things-to-do-content" style="width: 60%;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -737,7 +694,7 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td valign="top" style="border-bottom: 1px solid #979797">
-                                                                                        <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table width="100%" style="padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -746,7 +703,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="top">
-                                                                                                        <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
+                                                                                                        <table class="things-to-do-img" style="width: 39%;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -755,7 +712,7 @@
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
-                                                                                                        <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
+                                                                                                        <table class="things-to-do-content" style="width: 60%;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -781,7 +738,7 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td valign="top" style="border-bottom: 1px solid #979797">
-                                                                                        <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table width="100%" style="padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -790,7 +747,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="top">
-                                                                                                        <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
+                                                                                                        <table class="things-to-do-img" style="width: 39%;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -799,7 +756,7 @@
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
-                                                                                                        <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
+                                                                                                        <table class="things-to-do-content" style="width: 60%;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -825,7 +782,7 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td valign="top" style="border-bottom: 1px solid #979797">
-                                                                                        <table width="100%" style="background-color: #ffffff;padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                                        <table width="100%" style="padding: 30px 0" cellspacing="0" cellpadding="0" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px" valign="middle">
@@ -834,7 +791,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="top">
-                                                                                                        <table class="things-to-do-img" style="width: 39%;background-color: #ffffff;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
+                                                                                                        <table class="things-to-do-img" style="width: 39%;padding-right: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="39%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td valign="middle" align="center">
@@ -843,7 +800,7 @@
                                                                                                                 </tr>
                                                                                                             </tbody>
                                                                                                         </table>
-                                                                                                        <table class="things-to-do-content" style="width: 60%;background-color: #ffffff;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
+                                                                                                        <table class="things-to-do-content" style="width: 60%;padding-left: 15px" cellspacing="0" cellpadding="0" border="0" align="left" width="60%">
                                                                                                             <tbody>
                                                                                                                 <tr>
                                                                                                                     <td class="ec_item textSide ecaction_edit" style="color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 15px">
@@ -875,12 +832,12 @@
 
                                                                 <!-- PROMOS START -->
                                                                 <tr>
-                                                                    <td class="main" style="background-color: #ffffff">
+                                                                    <td class="main">
                                                                         <table id="promos" class="ec_repeat threeColumn" width="100%" cellspacing="0" cellpadding="0" border="0" data-block-group="three_column" align="left" style="padding: 30px 15px">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td valign="top">
-                                                                                        <table class="sidebarOne col_One" style="width: 182px;background-color: #ffffff" cellspacing="0" cellpadding="0" border="0" align="left" width="182">
+                                                                                        <table class="sidebarOne col_One" style="width: 182px" cellspacing="0" cellpadding="0" border="0" align="left" width="182">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
@@ -891,7 +848,7 @@
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarTwo col_Two" style="width: 182px;background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="left" width="182">
+                                                                                        <table class="sidebarTwo col_Two" style="width: 182px" cellspacing="0" cellpadding="0" border="0" align="left" width="182">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
@@ -902,7 +859,7 @@
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarThree col_Three" style="width: 182px;background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="left" width="182">
+                                                                                        <table class="sidebarThree col_Three" style="width: 182px" cellspacing="0" cellpadding="0" border="0" align="left" width="182">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
@@ -923,12 +880,12 @@
 
                                                                 <!-- DEALS START -->
                                                                 <tr>
-                                                                    <td class="main" style="background-color: #ffffff">
+                                                                    <td class="main">
                                                                         <table id="deals" class="ec_repeat twoColumn" width="100%" cellspacing="0" cellpadding="0" border="0" data-block-group="two_column" align="left" style="padding: 0 30px">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td valign="top">
-                                                                                        <table class="sidebarL col_L" style="width: 269px;background-color: #ffffff;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="left" width="269">
+                                                                                        <table class="sidebarL col_L" style="width: 269px;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="left" width="269">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px;padding-right: 15px" valign="middle">
@@ -937,7 +894,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="middle" align="center" style="padding-right: 15px">
-                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 255px" src="http://placehold.it/260x205" align="left" data-width="260">
+                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 255px" src="http://placehold.it/260x205" align="left" data-width="255">
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
@@ -954,7 +911,7 @@
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
-                                                                                        <table class="sidebarR col_R" style="width: 269px;background-color: #ffffff;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="right" width="269">
+                                                                                        <table class="sidebarR col_R" style="width: 269px;padding: 30px 0;border-top: 1px solid #979797" cellspacing="0" cellpadding="0" border="0" align="right" width="269">
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td class="ec_item titleSide ecaction_edit" style="margin: 5px 0 0 0;font-weight: normal;color: #3C3C3C;font-family: Helvetica, Arial, sans-serif;font-size: 16px;padding-left: 15px" valign="middle">
@@ -963,7 +920,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td valign="middle" align="center" style="padding-left: 15px">
-                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 255px" src="http://placehold.it/260x205" align="left" data-width="260">
+                                                                                                        <img class="ec_img ec_defaultimg" style="height: auto !important;max-width: 100%;width: 255px" src="http://placehold.it/260x205" align="left" data-width="255">
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
@@ -1017,7 +974,7 @@
                                                                 
                                                                 <!-- START CONTACT LINKS -->
                                                                 <tr>
-                                                                    <td class="main" style="background-color: #ffffff">
+                                                                    <td class="main">
                                                                         <table id="contact-links" class="ec_repeat threeColumn" width="100%" cellspacing="0" cellpadding="0" border="0" data-block-group="three_column" style="padding: 15px 15px 12px;background-color: #323232">
                                                                             <tbody>
                                                                                 <tr>
@@ -1028,7 +985,7 @@
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a style="color: #FFFFFF;text-decoration: none;font-family: Arial Narrow, Arial, sans-serif;text-transform: uppercase;font-size: 18px;font-weight: bold" title="Talk to a Travel Counselor" href="tel:8888474866">
                                                                                                             <img src="https://secure.campaigner.com/media/49/490030/icon-phone.png" alt="Talk to a Travel Counselor" style="vertical-align: middle"/>
-                                                                                                            <span style="vertical-align:middle;font-size: 18px"> 888-VISITMN</span>
+                                                                                                            <span style="vertical-align:middle;font-size: 20px"> 888-VISITMN</span>
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
@@ -1040,7 +997,7 @@
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a style="color: #FFFFFF;text-decoration: none;font-family: Arial Narrow, Arial, sans-serif;text-transform: uppercase;font-size: 18px;font-weight: bold" title="Email Us" href="http://www.exploreminnesota.com/contactTravelCounselor.aspx">
                                                                                                             <img src="https://secure.campaigner.com/media/49/490030/icon-email.png" alt="Email Us" style="vertical-align: middle"/>
-                                                                                                            <span style="vertical-align:middle;font-size: 18px"> Email</span>
+                                                                                                            <span style="vertical-align:middle;font-size: 20px"> Email</span>
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
@@ -1052,7 +1009,7 @@
                                                                                                     <td style="padding: 0 15px" valign="middle" align="center">
                                                                                                         <a style="color: #FFFFFF;text-decoration: none;font-family: Arial Narrow, Arial, sans-serif;text-transform: uppercase;font-size: 18px;font-weight: bold" title="Live Chat" href="http://www.livehelpnow.net/lhn/livechatvisitor.aspx?lhnid=21600&zzwindow=0&custom1=&custom2=&custom3=">
                                                                                                             <img src="https://secure.campaigner.com/media/49/490030/icon-chat.png" alt="Live Chat" style="vertical-align: middle"/>
-                                                                                                            <span style="vertical-align:middle;font-size: 18px"> Live Chat</span>
+                                                                                                            <span style="vertical-align:middle;font-size: 20px"> Live Chat</span>
                                                                                                         </a>
                                                                                                     </td>
                                                                                                 </tr>
